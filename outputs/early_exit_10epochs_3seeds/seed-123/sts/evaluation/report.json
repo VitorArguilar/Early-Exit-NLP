@@ -1,0 +1,286 @@
+{
+  "task": "sts",
+  "base_model": "C:\\Vitor\\UFRGS\\NLP\\TF\\outputs\\epoch_sweep\\sts\\epoch-7",
+  "head_seed": 123,
+  "head_epochs": 10,
+  "hardware": "NVIDIA GeForce RTX 3060",
+  "batch_size": 16,
+  "repeats": 3,
+  "selection_metric": "pearson",
+  "max_quality_drop": 0.02,
+  "min_validation_speedup": 1.05,
+  "selected_on_validation": {
+    "confidence": null,
+    "stability": null
+  },
+  "validation": [
+    {
+      "strategy": "fixed",
+      "depth": 3,
+      "pearson": 0.380953848361969,
+      "mse": 1.0516823530197144,
+      "latency_ms_per_pair": 0.39048320000074455,
+      "mean_layers": 3.0,
+      "exit_percent": {
+        "3": 100.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 0.0
+      },
+      "speedup": 3.771061085338166
+    },
+    {
+      "strategy": "fixed",
+      "depth": 6,
+      "pearson": 0.8104475140571594,
+      "mse": 0.3334544599056244,
+      "latency_ms_per_pair": 0.7527848000008817,
+      "mean_layers": 6.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 100.0,
+        "9": 0.0,
+        "12": 0.0
+      },
+      "speedup": 1.956118136284637
+    },
+    {
+      "strategy": "fixed",
+      "depth": 9,
+      "pearson": 0.9372586607933044,
+      "mse": 0.16008152067661285,
+      "latency_ms_per_pair": 1.10881259999951,
+      "mean_layers": 9.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 100.0,
+        "12": 0.0
+      },
+      "speedup": 1.3280296418004076
+    },
+    {
+      "strategy": "fixed",
+      "depth": 12,
+      "pearson": 0.9529243111610413,
+      "mse": 0.10081895440816879,
+      "latency_ms_per_pair": 1.4725360000011278,
+      "mean_layers": 12.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 100.0
+      },
+      "speedup": 1.0
+    },
+    {
+      "strategy": "stability",
+      "patience": 2,
+      "tolerance": 0.1,
+      "pearson": 0.9346505999565125,
+      "mse": 0.13440170884132385,
+      "latency_ms_per_pair": 1.4702443999995012,
+      "mean_layers": 10.8,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 13.600000000000001,
+        "9": 12.8,
+        "12": 73.6
+      },
+      "speedup": 1.0015586524265132
+    },
+    {
+      "strategy": "stability",
+      "patience": 2,
+      "tolerance": 0.2,
+      "pearson": 0.9187585115432739,
+      "mse": 0.16080480813980103,
+      "latency_ms_per_pair": 1.3600638000007166,
+      "mean_layers": 9.726,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 26.200000000000003,
+        "9": 23.400000000000002,
+        "12": 50.4
+      },
+      "speedup": 1.0826962676312333
+    },
+    {
+      "strategy": "stability",
+      "patience": 2,
+      "tolerance": 0.3,
+      "pearson": 0.9061986207962036,
+      "mse": 0.18239469826221466,
+      "latency_ms_per_pair": 1.2966453999997611,
+      "mean_layers": 9.03,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 35.6,
+        "9": 27.800000000000004,
+        "12": 36.6
+      },
+      "speedup": 1.1356505024437669
+    },
+    {
+      "strategy": "stability",
+      "patience": 2,
+      "tolerance": 0.5,
+      "pearson": 0.8868426084518433,
+      "mse": 0.22015057504177094,
+      "latency_ms_per_pair": 1.2024916000009398,
+      "mean_layers": 8.028,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 52.400000000000006,
+        "9": 27.6,
+        "12": 20.0
+      },
+      "speedup": 1.2245707163359618
+    },
+    {
+      "strategy": "stability",
+      "patience": 3,
+      "tolerance": 0.1,
+      "pearson": 0.9526781439781189,
+      "mse": 0.10153897106647491,
+      "latency_ms_per_pair": 1.5871532000001025,
+      "mean_layers": 11.952,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 1.6,
+        "12": 98.4
+      },
+      "speedup": 0.9277844129987154
+    },
+    {
+      "strategy": "stability",
+      "patience": 3,
+      "tolerance": 0.2,
+      "pearson": 0.952741265296936,
+      "mse": 0.10197314620018005,
+      "latency_ms_per_pair": 1.5732991999993828,
+      "mean_layers": 11.826,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 5.800000000000001,
+        "12": 94.19999999999999
+      },
+      "speedup": 0.935954203753301
+    },
+    {
+      "strategy": "stability",
+      "patience": 3,
+      "tolerance": 0.3,
+      "pearson": 0.9520572423934937,
+      "mse": 0.10465928912162781,
+      "latency_ms_per_pair": 1.5552778000001126,
+      "mean_layers": 11.574,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 14.2,
+        "12": 85.8
+      },
+      "speedup": 0.9467993435005767
+    },
+    {
+      "strategy": "stability",
+      "patience": 3,
+      "tolerance": 0.5,
+      "pearson": 0.9505466818809509,
+      "mse": 0.11185231059789658,
+      "latency_ms_per_pair": 1.6065646000006382,
+      "mean_layers": 10.836,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 38.800000000000004,
+        "12": 61.199999999999996
+      },
+      "speedup": 0.916574409768859
+    }
+  ],
+  "test": [
+    {
+      "strategy": "fixed",
+      "depth": 3,
+      "pearson": 0.38759392499923706,
+      "mse": 1.636467695236206,
+      "latency_ms_per_pair": 0.4075483251634758,
+      "mean_layers": 3.0,
+      "exit_percent": {
+        "3": 100.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 0.0
+      },
+      "speedup": 3.739522148571656
+    },
+    {
+      "strategy": "fixed",
+      "depth": 6,
+      "pearson": 0.7548074722290039,
+      "mse": 0.5062324404716492,
+      "latency_ms_per_pair": 0.7832586601308303,
+      "mean_layers": 6.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 100.0,
+        "9": 0.0,
+        "12": 0.0
+      },
+      "speedup": 1.9457633424794
+    },
+    {
+      "strategy": "fixed",
+      "depth": 9,
+      "pearson": 0.8221819400787354,
+      "mse": 0.615563690662384,
+      "latency_ms_per_pair": 1.1524987745097663,
+      "mean_layers": 9.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 100.0,
+        "12": 0.0
+      },
+      "speedup": 1.3223753658309734
+    },
+    {
+      "strategy": "fixed",
+      "depth": 12,
+      "pearson": 0.831169068813324,
+      "mse": 0.513602614402771,
+      "latency_ms_per_pair": 1.5240359885621009,
+      "mean_layers": 12.0,
+      "exit_percent": {
+        "3": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 100.0
+      },
+      "speedup": 1.0
+    }
+  ],
+  "recommended_on_validation": {
+    "strategy": "fixed",
+    "depth": 9,
+    "pearson": 0.9372586607933044,
+    "mse": 0.16008152067661285,
+    "latency_ms_per_pair": 1.10881259999951,
+    "mean_layers": 9.0,
+    "exit_percent": {
+      "3": 0.0,
+      "6": 0.0,
+      "9": 100.0,
+      "12": 0.0
+    },
+    "speedup": 1.3280296418004076
+  },
+  "exit_group_analysis": {},
+  "predictions_exported": true,
+  "note": "A recomenda\u00e7\u00e3o foi escolhida somente pela valida\u00e7\u00e3o. O custo mede apenas o forward dos lotes j\u00e1 tokenizados e transferidos ao dispositivo. Diferen\u00e7as pequenas de lat\u00eancia podem refletir ru\u00eddo de medi\u00e7\u00e3o."
+}

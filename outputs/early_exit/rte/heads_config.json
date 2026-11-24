@@ -1,0 +1,23 @@
+{
+  "task": "rte",
+  "base_model": "C:\\Vitor\\UFRGS\\NLP\\TF\\outputs\\epoch_sweep\\rte\\epoch-7",
+  "base_epoch": 7,
+  "trained_layers": [
+    3,
+    6,
+    9
+  ],
+  "epochs": 5,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "max_length": 128,
+  "seed": 42,
+  "train_loss": [
+    0.5136893625927206,
+    0.4428007184580444,
+    0.4190896447812017,
+    0.4030152263453903,
+    0.39241423485320087
+  ],
+  "encoder_frozen": true
+}

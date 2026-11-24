@@ -1,0 +1,17 @@
+task,seed,strategy,parameters,sentence_pair_id,premise,hypothesis,token_length,gold,prediction,error,exit_layer
+sts,123,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",18,Um cachorro branco de coleira está andando na água,Um homem sem camisa está jogando futebol em um gramado,25,1.0,1.0,0.0,12
+sts,123,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",80,O homem está concedendo uma entrevista,Um carro branco está sendo dirigido por um homem,19,1.0,1.0,0.0,12
+sts,123,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",280,Uma pessoa está andando de bicicleta ao longo de uma trilha enlameada,Um homem está andando de mountain bike descendo um morro de terra,37,1.75,4.35078763961792,2.60078763961792,12
+sts,123,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",2417,A menina de uniforme azul e branco está torcendo,Alguns números coreográficos estão sendo apresentados pela menina de uniforme azul e branco,28,1.5,4.188647270202637,2.6886472702026367,12
+sts,123,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",126,A bateria está sendo tocada pelo cara,O cara está tocando a bateria,16,5.0,5.0,0.0,3
+sts,123,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",256,A senhora está passeando com cachorro pela rua,Uma senhora está passeando com o cachorro na rua,22,5.0,5.0,0.0,3
+sts,123,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",1939,Diferentes coisas de uma guerra estão sendo mostradas para algumas pessoas por um veterano,Três amigos estão fazendo caras para a câmera,28,1.0,4.661262035369873,3.661262035369873,3
+sts,123,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",1659,Uma pessoa está fritando carne em uma frigideira,Um gambá está sendo segurado por uma pessoa,25,1.0,4.761014938354492,3.761014938354492,3
+sts,123,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",144,O garoto está comendo cereal,Cereal está sendo comido por um garoto,20,5.0,5.0,0.0,6
+sts,123,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",174,Uma senhora está fervendo macarrão na água,Macarrão está sendo fervido em água por uma senhora,25,5.0,5.0,0.0,6
+sts,123,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",651,O cachorro pequeno está correndo na areia,Nenhum cachorro pequeno está correndo na areia,17,2.5,4.897136211395264,2.3971362113952637,6
+sts,123,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",522,Um cachorro preto e um branco estão correndo alegremente na grama,Uma pessoa negra vestindo branco está correndo alegremente com o cachorro na grama,29,1.5,4.227929592132568,2.7279295921325684,6
+sts,123,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",94,Um cara está acariciando dois cachorros,Dois cachorros estão sendo acariciados por um cara,23,5.0,5.0,0.0,9
+sts,123,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",100,Uma menina está mostrando um cachorro com pelo muito longo em uma exposição canina,Um cachorro com pelo muito longo está sendo exibido por uma menina em uma exposição canina,35,5.0,5.0,0.0,9
+sts,123,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",2015,Duas crianças estão se alongando em cima de umas barras de metal,Duas crianças estão agachadas sob algumas barras metálicas,28,2.5,5.0,2.5,9
+sts,123,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",645,Papel e tesoura ambos cortam,O papel está sendo cortado com tesoura,19,1.5,4.0289201736450195,2.5289201736450195,9

@@ -1,0 +1,13 @@
+task,seed,strategy,selected,parameters
+rte,42,confidence,True,"{""threshold"": 0.5}"
+rte,42,stability,False,
+rte,123,confidence,True,"{""threshold"": 0.3}"
+rte,123,stability,False,
+rte,2026,confidence,True,"{""threshold"": 0.5}"
+rte,2026,stability,False,
+sts,42,confidence,False,
+sts,42,stability,False,
+sts,123,confidence,False,
+sts,123,stability,False,
+sts,2026,confidence,False,
+sts,2026,stability,False,

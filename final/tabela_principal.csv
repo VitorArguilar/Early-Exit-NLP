@@ -1,0 +1,6 @@
+﻿Tarefa,Estratégia,Métrica,Qualidade média,Desvio qualidade,Latência média (ms/par),Speedup médio,Camadas médias
+RTE,Modelo completo (12),Macro F1,0.8885,0.0000,1.572,1.00,12.00
+RTE,Saída fixa (9),Macro F1,0.8688,0.0115,1.189,1.32,9.00
+RTE,Confiança selecionada,Macro F1,0.8723,0.0025,1.253,1.26,8.00
+STS,Modelo completo (12),Pearson,0.8312,0.0000,1.525,1.00,12.00
+STS,Saída fixa (9),Pearson,0.8248,0.0024,1.156,1.32,9.00

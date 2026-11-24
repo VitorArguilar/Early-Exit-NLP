@@ -1,0 +1,135 @@
+{
+  "task": "sts",
+  "model": "neuralmind/bert-base-portuguese-cased",
+  "seed": 42,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "lr_scheduler": "constant",
+  "max_length": 128,
+  "selection_metric": "pearson",
+  "comparison": [
+    {
+      "epoch": 2,
+      "train_loss": 0.1697,
+      "validation_loss": 0.23014560341835022,
+      "validation_primary": 0.8981699347496033,
+      "validation_rmse": 0.4772412984633261,
+      "loss_gap": 0.06044560341835023
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0956,
+      "validation_loss": 0.1571541130542755,
+      "validation_primary": 0.9323517680168152,
+      "validation_rmse": 0.3895350891303574,
+      "loss_gap": 0.06155411305427551
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0658,
+      "validation_loss": 0.1457562893629074,
+      "validation_primary": 0.9499586820602417,
+      "validation_rmse": 0.3681068881943549,
+      "loss_gap": 0.07995628936290741
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.0503,
+      "validation_loss": 0.12530861794948578,
+      "validation_primary": 0.9535484313964844,
+      "validation_rmse": 0.3351269635829862,
+      "loss_gap": 0.07500861794948578
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0401,
+      "validation_loss": 0.156779944896698,
+      "validation_primary": 0.9582499265670776,
+      "validation_rmse": 0.3850884027670909,
+      "loss_gap": 0.116679944896698
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0343,
+      "validation_loss": 0.10268756002187729,
+      "validation_primary": 0.9642923474311829,
+      "validation_rmse": 0.3090746066631458,
+      "loss_gap": 0.06838756002187729
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.0285,
+      "validation_loss": 0.09811193495988846,
+      "validation_primary": 0.9650606513023376,
+      "validation_rmse": 0.30350342557881244,
+      "loss_gap": 0.06961193495988846
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.0251,
+      "validation_loss": 0.07001093029975891,
+      "validation_primary": 0.9685539603233337,
+      "validation_rmse": 0.26413857870767593,
+      "loss_gap": 0.044910930299758914
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.0234,
+      "validation_loss": 0.09304194897413254,
+      "validation_primary": 0.9662134051322937,
+      "validation_rmse": 0.29747862684986914,
+      "loss_gap": 0.06964194897413253
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.0215,
+      "validation_loss": 0.09084086120128632,
+      "validation_primary": 0.9696686863899231,
+      "validation_rmse": 0.2891324061844129,
+      "loss_gap": 0.06934086120128632
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.019,
+      "validation_loss": 0.0992458164691925,
+      "validation_primary": 0.9681861996650696,
+      "validation_rmse": 0.3063751213255587,
+      "loss_gap": 0.0802458164691925
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.0175,
+      "validation_loss": 0.06178072839975357,
+      "validation_primary": 0.972129762172699,
+      "validation_rmse": 0.24535142109925595,
+      "loss_gap": 0.04428072839975357
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.0166,
+      "validation_loss": 0.07642427831888199,
+      "validation_primary": 0.9697913527488708,
+      "validation_rmse": 0.26913186212677664,
+      "loss_gap": 0.059824278318881985
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.0153,
+      "validation_loss": 0.07350099086761475,
+      "validation_primary": 0.9692211747169495,
+      "validation_rmse": 0.2666469856663713,
+      "loss_gap": 0.058200990867614745
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.0148,
+      "validation_loss": 0.09390072524547577,
+      "validation_primary": 0.9699799418449402,
+      "validation_rmse": 0.2848041267687727,
+      "loss_gap": 0.07910072524547576
+    }
+  ],
+  "selected_epoch": 24,
+  "test_evaluated": false,
+  "interpretation": "Compare a queda da m\u00e9trica de valida\u00e7\u00e3o e o aumento de validation_loss apesar da queda de train_loss. Isso sugere overfitting, mas n\u00e3o o comprova sozinho."
+}

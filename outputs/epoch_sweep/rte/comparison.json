@@ -1,0 +1,55 @@
+{
+  "task": "rte",
+  "model": "neuralmind/bert-base-portuguese-cased",
+  "seed": 42,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "lr_scheduler": "constant",
+  "max_length": 128,
+  "selection_metric": "macro_f1",
+  "comparison": [
+    {
+      "epoch": 3,
+      "train_loss": 0.1561,
+      "validation_loss": 0.2444808930158615,
+      "validation_primary": 0.9439677254098361,
+      "validation_accuracy": 0.944,
+      "loss_gap": 0.08838089301586152
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.081,
+      "validation_loss": 0.2695748805999756,
+      "validation_primary": 0.9419941994199419,
+      "validation_accuracy": 0.942,
+      "loss_gap": 0.18857488059997557
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.0544,
+      "validation_loss": 0.23194262385368347,
+      "validation_primary": 0.956,
+      "validation_accuracy": 0.956,
+      "loss_gap": 0.17754262385368347
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.0389,
+      "validation_loss": 0.28616705536842346,
+      "validation_primary": 0.953999815999264,
+      "validation_accuracy": 0.954,
+      "loss_gap": 0.24726705536842347
+    }
+  ],
+  "selected_epoch": 7,
+  "test_selected_only": {
+    "test_loss": 0.6237901449203491,
+    "test_model_preparation_time": 0.0022,
+    "test_macro_f1": 0.8884701427287911,
+    "test_accuracy": 0.8888888888888888,
+    "test_runtime": 3.9931,
+    "test_samples_per_second": 613.062,
+    "test_steps_per_second": 38.316
+  },
+  "interpretation": "Compare a queda da m\u00e9trica de valida\u00e7\u00e3o e o aumento de validation_loss apesar da queda de train_loss. Isso sugere overfitting, mas n\u00e3o o comprova sozinho."
+}

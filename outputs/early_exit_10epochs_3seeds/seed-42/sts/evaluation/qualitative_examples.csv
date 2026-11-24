@@ -1,0 +1,17 @@
+task,seed,strategy,parameters,sentence_pair_id,premise,hypothesis,token_length,gold,prediction,error,exit_layer
+sts,42,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",18,Um cachorro branco de coleira está andando na água,Um homem sem camisa está jogando futebol em um gramado,25,1.0,1.0,0.0,12
+sts,42,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",80,O homem está concedendo uma entrevista,Um carro branco está sendo dirigido por um homem,19,1.0,1.0,0.0,12
+sts,42,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",280,Uma pessoa está andando de bicicleta ao longo de uma trilha enlameada,Um homem está andando de mountain bike descendo um morro de terra,37,1.75,4.35078763961792,2.60078763961792,12
+sts,42,fixed_12,"{""depth"": 12, ""strategy"": ""fixed""}",2417,A menina de uniforme azul e branco está torcendo,Alguns números coreográficos estão sendo apresentados pela menina de uniforme azul e branco,28,1.5,4.188647270202637,2.6886472702026367,12
+sts,42,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",613,Um cara está encaixando um silenciador em uma pistola,Um cara está colocando um silenciador na arma,24,4.0,3.9999260902404785,7.390975952148438e-05,3
+sts,42,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",2380,Um cachorro está perseguindo a cauda de um animal na grama,Um pequenino cachorro está perseguindo uma grande vaca marrom,28,3.7999999523,3.800220489501953,0.00022053720195325255,3
+sts,42,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",2099,Esse grupo de pessoas está praticando salvamento na água e usando coletes salva-vidas,A corrente está sendo navegada por um grupo de amigos em um bote,36,1.25,4.240630626678467,2.990630626678467,3
+sts,42,fixed_3,"{""depth"": 3, ""strategy"": ""fixed""}",1659,Uma pessoa está fritando carne em uma frigideira,Um gambá está sendo segurado por uma pessoa,25,1.0,4.124014854431152,3.1240148544311523,3
+sts,42,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",389,As pessoas em uma corrida de arrancada estão olhando para as chamas que estão saindo dos carros,Algumas pessoas em uma corrida de arrancada estão observando as chamas que estão saindo dos carros,39,5.0,5.0,0.0,6
+sts,42,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",1440,O praticante de snowboard está pulando da neve,Um praticante de snowboard está pulando da neve,27,5.0,5.0,0.0,6
+sts,42,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",651,O cachorro pequeno está correndo na areia,Nenhum cachorro pequeno está correndo na areia,17,2.5,4.814429759979248,2.314429759979248,6
+sts,42,fixed_6,"{""depth"": 6, ""strategy"": ""fixed""}",522,Um cachorro preto e um branco estão correndo alegremente na grama,Uma pessoa negra vestindo branco está correndo alegremente com o cachorro na grama,29,1.5,4.1551103591918945,2.6551103591918945,6
+sts,42,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",68,Um bebê elefante não está comendo uma árvore pequenina,Uma menina pequena está negociando uma lambreta,26,1.0,1.0,0.0,9
+sts,42,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",543,Não tem nenhuma mulher cortando uma cebola,Um cavalo está parado,17,1.0,1.0,0.0,9
+sts,42,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",645,Papel e tesoura ambos cortam,O papel está sendo cortado com tesoura,19,1.5,3.7800896167755127,2.2800896167755127,9
+sts,42,fixed_9,"{""depth"": 9, ""strategy"": ""fixed""}",2015,Duas crianças estão se alongando em cima de umas barras de metal,Duas crianças estão agachadas sob algumas barras metálicas,28,2.5,5.0,2.5,9

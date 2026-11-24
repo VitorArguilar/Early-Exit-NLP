@@ -1,0 +1,172 @@
+{
+  "task": "sts",
+  "base_model": "C:\\Vitor\\UFRGS\\NLP\\TF\\outputs\\epoch_sweep\\sts\\epoch-7",
+  "epochs_compared": [
+    5,
+    7,
+    10,
+    15
+  ],
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "max_length": 128,
+  "seed": 42,
+  "online_train_loss": [
+    0.7486813578031573,
+    0.4672847923980591,
+    0.45389459745304006,
+    0.4338349911592516,
+    0.4223299614114902,
+    0.4076376174386655,
+    0.4116206667786441,
+    0.4020085693760352,
+    0.40311017202291205,
+    0.38481518435829687,
+    0.38360300982320633,
+    0.39209823374446545,
+    0.3838153762482015,
+    0.382598369654625,
+    0.38166554014058895
+  ],
+  "rows": [
+    {
+      "epoch": 5,
+      "layer": 3,
+      "train_loss": 0.8021370907196632,
+      "validation_loss": 0.8687653222084045,
+      "train_pearson": 0.40969833731651306,
+      "validation_pearson": 0.3352365493774414,
+      "train_mse": 0.802137017250061,
+      "validation_mse": 0.8687652945518494,
+      "loss_gap": 0.06662823148874131
+    },
+    {
+      "epoch": 5,
+      "layer": 6,
+      "train_loss": 0.32803247156509985,
+      "validation_loss": 0.3749104516506195,
+      "train_pearson": 0.8227185606956482,
+      "validation_pearson": 0.7944265604019165,
+      "train_mse": 0.3273739516735077,
+      "validation_mse": 0.3748790919780731,
+      "loss_gap": 0.04687798008551963
+    },
+    {
+      "epoch": 5,
+      "layer": 9,
+      "train_loss": 0.09059761752073582,
+      "validation_loss": 0.1542394471168518,
+      "train_pearson": 0.9647481441497803,
+      "validation_pearson": 0.9364896416664124,
+      "train_mse": 0.08326556533575058,
+      "validation_mse": 0.14779269695281982,
+      "loss_gap": 0.06364182959611599
+    },
+    {
+      "epoch": 7,
+      "layer": 3,
+      "train_loss": 0.8047956717931307,
+      "validation_loss": 0.8962941858768463,
+      "train_pearson": 0.43308308720588684,
+      "validation_pearson": 0.35766610503196716,
+      "train_mse": 0.804469645023346,
+      "validation_mse": 0.8957890272140503,
+      "loss_gap": 0.09149851408371557
+    },
+    {
+      "epoch": 7,
+      "layer": 6,
+      "train_loss": 0.31193740861232466,
+      "validation_loss": 0.3827567615509033,
+      "train_pearson": 0.8369964361190796,
+      "validation_pearson": 0.8058708310127258,
+      "train_mse": 0.298953652381897,
+      "validation_mse": 0.3720104396343231,
+      "loss_gap": 0.07081935293857866
+    },
+    {
+      "epoch": 7,
+      "layer": 9,
+      "train_loss": 0.08582459346147683,
+      "validation_loss": 0.15157398319244383,
+      "train_pearson": 0.9665214419364929,
+      "validation_pearson": 0.9373304843902588,
+      "train_mse": 0.08012345433235168,
+      "validation_mse": 0.14658541977405548,
+      "loss_gap": 0.065749389730967
+    },
+    {
+      "epoch": 10,
+      "layer": 3,
+      "train_loss": 0.8077047786712647,
+      "validation_loss": 0.8755369923114776,
+      "train_pearson": 0.45939525961875916,
+      "validation_pearson": 0.384005069732666,
+      "train_mse": 0.8077048063278198,
+      "validation_mse": 0.8755369782447815,
+      "loss_gap": 0.06783221364021297
+    },
+    {
+      "epoch": 10,
+      "layer": 6,
+      "train_loss": 0.28441889113646285,
+      "validation_loss": 0.34032318043708804,
+      "train_pearson": 0.8404500484466553,
+      "validation_pearson": 0.8086535930633545,
+      "train_mse": 0.2827211618423462,
+      "validation_mse": 0.3389769196510315,
+      "loss_gap": 0.05590428930062519
+    },
+    {
+      "epoch": 10,
+      "layer": 9,
+      "train_loss": 0.05942331607754414,
+      "validation_loss": 0.11916690319776535,
+      "train_pearson": 0.9681484699249268,
+      "validation_pearson": 0.9380713701248169,
+      "train_mse": 0.05914679542183876,
+      "validation_mse": 0.11901881545782089,
+      "loss_gap": 0.05974358712022121
+    },
+    {
+      "epoch": 15,
+      "layer": 3,
+      "train_loss": 0.7485097945653475,
+      "validation_loss": 0.821909443616867,
+      "train_pearson": 0.4828818738460541,
+      "validation_pearson": 0.40767431259155273,
+      "train_mse": 0.7485073804855347,
+      "validation_mse": 0.8219094276428223,
+      "loss_gap": 0.07339964905151952
+    },
+    {
+      "epoch": 15,
+      "layer": 6,
+      "train_loss": 0.3076457257270813,
+      "validation_loss": 0.3571760751008987,
+      "train_pearson": 0.84849613904953,
+      "validation_pearson": 0.8154898285865784,
+      "train_mse": 0.3071387708187103,
+      "validation_mse": 0.3570595681667328,
+      "loss_gap": 0.049530349373817395
+    },
+    {
+      "epoch": 15,
+      "layer": 9,
+      "train_loss": 0.07887739084546383,
+      "validation_loss": 0.15006908786296844,
+      "train_pearson": 0.9704205989837646,
+      "validation_pearson": 0.9391376972198486,
+      "train_mse": 0.07433655112981796,
+      "validation_mse": 0.1459866464138031,
+      "loss_gap": 0.07119169701750461
+    }
+  ],
+  "best_validation_epoch_by_layer": {
+    "3": 15,
+    "6": 15,
+    "9": 15
+  },
+  "test_evaluated": false,
+  "note": "Overfitting \u00e9 sugerido quando a perda de valida\u00e7\u00e3o aumenta enquanto a de treino diminui; diferen\u00e7as pequenas devem ser interpretadas com cautela."
+}

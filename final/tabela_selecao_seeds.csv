@@ -1,0 +1,13 @@
+﻿Tarefa,Seed,Estratégia,Selecionada,Parâmetros
+RTE,42,confidence,True,"{""threshold"": 0.5}"
+RTE,42,stability,False,
+RTE,123,confidence,True,"{""threshold"": 0.3}"
+RTE,123,stability,False,
+RTE,2026,confidence,True,"{""threshold"": 0.5}"
+RTE,2026,stability,False,
+STS,42,confidence,False,
+STS,42,stability,False,
+STS,123,confidence,False,
+STS,123,stability,False,
+STS,2026,confidence,False,
+STS,2026,stability,False,

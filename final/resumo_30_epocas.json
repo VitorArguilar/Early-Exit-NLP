@@ -1,0 +1,44 @@
+[
+  {
+    "tarefa": "rte",
+    "melhor_epoca_base": 28,
+    "melhor_qualidade_base": 0.9659987759559344,
+    "ultima_qualidade_base": 0.9599993599897598,
+    "perda_validacao_base_final": 0.28714776039123535,
+    "melhores_heads": {
+      "3": {
+        "epoca": 28,
+        "qualidade": 0.6999231803341655
+      },
+      "6": {
+        "epoca": 14,
+        "qualidade": 0.873995463836698
+      },
+      "9": {
+        "epoca": 12,
+        "qualidade": 0.9419607654774627
+      }
+    }
+  },
+  {
+    "tarefa": "sts",
+    "melhor_epoca_base": 24,
+    "melhor_qualidade_base": 0.972129762172699,
+    "ultima_qualidade_base": 0.9699799418449402,
+    "perda_validacao_base_final": 0.09390072524547577,
+    "melhores_heads": {
+      "3": {
+        "epoca": 30,
+        "qualidade": 0.44661402702331543
+      },
+      "6": {
+        "epoca": 30,
+        "qualidade": 0.8297172784805298
+      },
+      "9": {
+        "epoca": 24,
+        "qualidade": 0.9405811429023743
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+pip-*/
+tmp*/
+torchinductor_*/
+outputs/**/trainer/
+outputs/**/checkpoint-*/
+outputs/**/*.log
+outputs/**/*.safetensors
+outputs/**/*.pth

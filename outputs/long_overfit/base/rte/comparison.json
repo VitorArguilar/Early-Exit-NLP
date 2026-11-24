@@ -1,0 +1,135 @@
+{
+  "task": "rte",
+  "model": "neuralmind/bert-base-portuguese-cased",
+  "seed": 42,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "lr_scheduler": "constant",
+  "max_length": 128,
+  "selection_metric": "macro_f1",
+  "comparison": [
+    {
+      "epoch": 2,
+      "train_loss": 0.2139,
+      "validation_loss": 0.20640163123607635,
+      "validation_primary": 0.9339933993399341,
+      "validation_accuracy": 0.934,
+      "loss_gap": -0.007498368763923652
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1096,
+      "validation_loss": 0.21332570910453796,
+      "validation_primary": 0.9379878456177411,
+      "validation_accuracy": 0.938,
+      "loss_gap": 0.10372570910453796
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0615,
+      "validation_loss": 0.25324881076812744,
+      "validation_primary": 0.9519992319877117,
+      "validation_accuracy": 0.952,
+      "loss_gap": 0.19174881076812744
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.0479,
+      "validation_loss": 0.29852908849716187,
+      "validation_primary": 0.9559746413934427,
+      "validation_accuracy": 0.956,
+      "loss_gap": 0.25062908849716187
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0365,
+      "validation_loss": 0.30683624744415283,
+      "validation_primary": 0.9519992319877117,
+      "validation_accuracy": 0.952,
+      "loss_gap": 0.27033624744415286
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0336,
+      "validation_loss": 0.2814854681491852,
+      "validation_primary": 0.9559971838197645,
+      "validation_accuracy": 0.956,
+      "loss_gap": 0.2478854681491852
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.0209,
+      "validation_loss": 0.3490073084831238,
+      "validation_primary": 0.9479791916766707,
+      "validation_accuracy": 0.948,
+      "loss_gap": 0.3281073084831238
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.024,
+      "validation_loss": 0.3383510708808899,
+      "validation_primary": 0.9539953995399539,
+      "validation_accuracy": 0.954,
+      "loss_gap": 0.31435107088088987
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.0264,
+      "validation_loss": 0.28232795000076294,
+      "validation_primary": 0.9619986319507502,
+      "validation_accuracy": 0.962,
+      "loss_gap": 0.25592795000076296
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.0219,
+      "validation_loss": 0.3022972345352173,
+      "validation_primary": 0.9579998319993279,
+      "validation_accuracy": 0.958,
+      "loss_gap": 0.2803972345352173
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.0215,
+      "validation_loss": 0.3227080702781677,
+      "validation_primary": 0.957995799579958,
+      "validation_accuracy": 0.958,
+      "loss_gap": 0.3012080702781677
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.0188,
+      "validation_loss": 0.25237441062927246,
+      "validation_primary": 0.9659933346936,
+      "validation_accuracy": 0.966,
+      "loss_gap": 0.23357441062927245
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.0182,
+      "validation_loss": 0.3037724792957306,
+      "validation_primary": 0.961999847999392,
+      "validation_accuracy": 0.962,
+      "loss_gap": 0.2855724792957306
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.0263,
+      "validation_loss": 0.2935869097709656,
+      "validation_primary": 0.9659987759559344,
+      "validation_accuracy": 0.966,
+      "loss_gap": 0.2672869097709656
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.0177,
+      "validation_loss": 0.28714776039123535,
+      "validation_primary": 0.9599993599897598,
+      "validation_accuracy": 0.96,
+      "loss_gap": 0.26944776039123536
+    }
+  ],
+  "selected_epoch": 28,
+  "test_evaluated": false,
+  "interpretation": "Compare a queda da m\u00e9trica de valida\u00e7\u00e3o e o aumento de validation_loss apesar da queda de train_loss. Isso sugere overfitting, mas n\u00e3o o comprova sozinho."
+}

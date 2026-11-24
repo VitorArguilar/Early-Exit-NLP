@@ -1,0 +1,28 @@
+{
+  "task": "sts",
+  "base_model": "C:\\Vitor\\UFRGS\\NLP\\TF\\outputs\\epoch_sweep\\sts\\epoch-7",
+  "base_epoch": 7,
+  "trained_layers": [
+    3,
+    6,
+    9
+  ],
+  "epochs": 10,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "max_length": 128,
+  "seed": 42,
+  "train_loss": [
+    0.7486813578031573,
+    0.4672847923980591,
+    0.45389459745304006,
+    0.4338349911592516,
+    0.4223299614114902,
+    0.4076376174386655,
+    0.4116206667786441,
+    0.4020085693760352,
+    0.40311017202291205,
+    0.38481518435829687
+  ],
+  "encoder_frozen": true
+}

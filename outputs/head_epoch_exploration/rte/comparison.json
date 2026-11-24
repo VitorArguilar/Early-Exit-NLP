@@ -1,0 +1,172 @@
+{
+  "task": "rte",
+  "base_model": "C:\\Vitor\\UFRGS\\NLP\\TF\\outputs\\epoch_sweep\\rte\\epoch-7",
+  "epochs_compared": [
+    5,
+    7,
+    10,
+    15
+  ],
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "max_length": 128,
+  "seed": 42,
+  "online_train_loss": [
+    0.5136893625927206,
+    0.4428007184580444,
+    0.4190896447812017,
+    0.4030152263453903,
+    0.39241423485320087,
+    0.3754443298174064,
+    0.3729431141872664,
+    0.3663576069569412,
+    0.36059830537299264,
+    0.35716939327611386,
+    0.3551090052145412,
+    0.353719342618961,
+    0.3504937343866878,
+    0.3487583154615665,
+    0.34867041032642343
+  ],
+  "rows": [
+    {
+      "epoch": 5,
+      "layer": 3,
+      "train_loss": 0.632313729763031,
+      "validation_loss": 0.6412278537750244,
+      "train_macro_f1": 0.6437527838610296,
+      "validation_macro_f1": 0.6171957323498419,
+      "train_accuracy": 0.6510769230769231,
+      "validation_accuracy": 0.628,
+      "loss_gap": 0.00891412401199343
+    },
+    {
+      "epoch": 5,
+      "layer": 6,
+      "train_loss": 0.38862953011806195,
+      "validation_loss": 0.37252909284830094,
+      "train_macro_f1": 0.8272994906758331,
+      "validation_macro_f1": 0.8238619077356648,
+      "train_accuracy": 0.8276923076923077,
+      "validation_accuracy": 0.824,
+      "loss_gap": -0.016100437269761014
+    },
+    {
+      "epoch": 5,
+      "layer": 9,
+      "train_loss": 0.08958476071976698,
+      "validation_loss": 0.16639456730522215,
+      "train_macro_f1": 0.9730735268360831,
+      "validation_macro_f1": 0.933987061464047,
+      "train_accuracy": 0.9730769230769231,
+      "validation_accuracy": 0.934,
+      "loss_gap": 0.07680980658545516
+    },
+    {
+      "epoch": 7,
+      "layer": 3,
+      "train_loss": 0.6326684105212872,
+      "validation_loss": 0.6479288263320923,
+      "train_macro_f1": 0.6080102092427886,
+      "validation_macro_f1": 0.5544317578215883,
+      "train_accuracy": 0.6375384615384615,
+      "validation_accuracy": 0.594,
+      "loss_gap": 0.015260415810805061
+    },
+    {
+      "epoch": 7,
+      "layer": 6,
+      "train_loss": 0.3592582414700435,
+      "validation_loss": 0.3559108726978302,
+      "train_macro_f1": 0.8400139014851261,
+      "validation_macro_f1": 0.830565909861064,
+      "train_accuracy": 0.8409230769230769,
+      "validation_accuracy": 0.832,
+      "loss_gap": -0.003347368772213255
+    },
+    {
+      "epoch": 7,
+      "layer": 9,
+      "train_loss": 0.11605584864703437,
+      "validation_loss": 0.21342188332695514,
+      "train_macro_f1": 0.9621207957636695,
+      "validation_macro_f1": 0.9359497846311509,
+      "train_accuracy": 0.9621538461538461,
+      "validation_accuracy": 0.936,
+      "loss_gap": 0.09736603467992076
+    },
+    {
+      "epoch": 10,
+      "layer": 3,
+      "train_loss": 0.5862335879619305,
+      "validation_loss": 0.5983158683776856,
+      "train_macro_f1": 0.6876496062514961,
+      "validation_macro_f1": 0.6832702546667522,
+      "train_accuracy": 0.6876923076923077,
+      "validation_accuracy": 0.684,
+      "loss_gap": 0.012082280415755098
+    },
+    {
+      "epoch": 10,
+      "layer": 6,
+      "train_loss": 0.3513605699905982,
+      "validation_loss": 0.3526766927242279,
+      "train_macro_f1": 0.8404128687699878,
+      "validation_macro_f1": 0.8243126991627592,
+      "train_accuracy": 0.8418461538461538,
+      "validation_accuracy": 0.826,
+      "loss_gap": 0.0013161227336296877
+    },
+    {
+      "epoch": 10,
+      "layer": 9,
+      "train_loss": 0.07044289811442678,
+      "validation_loss": 0.17836216926574708,
+      "train_macro_f1": 0.9793834911139296,
+      "validation_macro_f1": 0.937969977469095,
+      "train_accuracy": 0.9793846153846154,
+      "validation_accuracy": 0.938,
+      "loss_gap": 0.1079192711513203
+    },
+    {
+      "epoch": 15,
+      "layer": 3,
+      "train_loss": 0.6098713471339299,
+      "validation_loss": 0.6170569038391114,
+      "train_macro_f1": 0.6237064886941597,
+      "validation_macro_f1": 0.6395917902803596,
+      "train_accuracy": 0.6463076923076924,
+      "validation_accuracy": 0.658,
+      "loss_gap": 0.007185556705181506
+    },
+    {
+      "epoch": 15,
+      "layer": 6,
+      "train_loss": 0.32083327416273266,
+      "validation_loss": 0.3138633546233177,
+      "train_macro_f1": 0.8666152299206217,
+      "validation_macro_f1": 0.8659737308512468,
+      "train_accuracy": 0.8666153846153846,
+      "validation_accuracy": 0.866,
+      "loss_gap": -0.006969919539414948
+    },
+    {
+      "epoch": 15,
+      "layer": 9,
+      "train_loss": 0.0789737605711875,
+      "validation_loss": 0.22762442774232478,
+      "train_macro_f1": 0.9749154957624945,
+      "validation_macro_f1": 0.9379282450512793,
+      "train_accuracy": 0.9749230769230769,
+      "validation_accuracy": 0.938,
+      "loss_gap": 0.14865066717113729
+    }
+  ],
+  "best_validation_epoch_by_layer": {
+    "3": 10,
+    "6": 15,
+    "9": 10
+  },
+  "test_evaluated": false,
+  "note": "Overfitting \u00e9 sugerido quando a perda de valida\u00e7\u00e3o aumenta enquanto a de treino diminui; diferen\u00e7as pequenas devem ser interpretadas com cautela."
+}

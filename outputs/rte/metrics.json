@@ -1,0 +1,27 @@
+{
+  "task": "rte",
+  "model": "neuralmind/bert-base-portuguese-cased",
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "max_length": 128,
+  "validation": {
+    "eval_loss": 0.23660092055797577,
+    "eval_macro_f1": 0.9239403692494916,
+    "eval_accuracy": 0.924,
+    "eval_runtime": 0.8372,
+    "eval_samples_per_second": 597.201,
+    "eval_steps_per_second": 38.221,
+    "epoch": 3.0
+  },
+  "test": {
+    "test_loss": 0.48262616991996765,
+    "test_macro_f1": 0.8752707635683471,
+    "test_accuracy": 0.8758169934640523,
+    "test_runtime": 3.832,
+    "test_samples_per_second": 638.83,
+    "test_steps_per_second": 39.927,
+    "epoch": 3.0
+  }
+}
