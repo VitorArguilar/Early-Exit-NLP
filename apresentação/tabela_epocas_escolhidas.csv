@@ -1,0 +1,5 @@
+﻿tarefa,componente,epocas_executadas,melhor_epoca,metrica_selecao,melhor_validacao,paciencia,teste_avaliado
+rte,base,11,6,macro_f1,0.957998487945566,5,True
+sts,base,31,26,pearson,0.9721437096595764,5,True
+rte,heads,23,18,mean_macro_f1,0.8419142029388341,5,True
+sts,heads,84,79,mean_pearson,0.7961032142241796,5,True

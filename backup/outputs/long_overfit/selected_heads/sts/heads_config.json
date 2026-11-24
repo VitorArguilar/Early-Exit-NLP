@@ -1,0 +1,21 @@
+{
+  "task": "sts",
+  "base_model": "/home/vitorarguilar/vitor/ufrgs/nlp/tf/Early-Exit-NLP/outputs/epoch_sweep/sts/epoch-7",
+  "base_epoch": 7,
+  "trained_layers": [
+    3,
+    6,
+    9
+  ],
+  "epochs": "por_camada",
+  "selected_head_epochs": {
+    "3": 30,
+    "6": 30,
+    "9": 24
+  },
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "max_length": 128,
+  "seed": 42,
+  "encoder_frozen": true
+}

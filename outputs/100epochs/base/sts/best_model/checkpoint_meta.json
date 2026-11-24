@@ -1,0 +1,7 @@
+{
+  "epoch": 26,
+  "selection_metric": "pearson",
+  "validation_score": 0.9721437096595764,
+  "training_dtype": "float32",
+  "saved_weights_dtype": "float16"
+}

@@ -1,0 +1,5 @@
+{
+  "epoch": 30,
+  "weights_dtype": "float16",
+  "training_dtype": "float32"
+}

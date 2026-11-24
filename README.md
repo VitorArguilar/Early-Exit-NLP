@@ -1,5 +1,7 @@
 # BERTimbau Base no ASSIN2
 
+A [nova rodada de até 100 épocas com early stopping](ESTUDO_100_EPOCAS.md) contém checkpoints e históricos para RTE e STS, com heads nas 12 camadas. Os resultados anteriores estão em [backup](backup/).
+
 O [estudo exploratório de até 30 épocas](ESTUDO_30_EPOCAS.md) compara as curvas longas do modelo base e dos heads intermediários em RTE e STS.
 
 A [comparação completa dos testes](final/COMPARACAO_COMPLETA.md) reúne tabelas e gráficos de todas as configurações avaliadas.

@@ -19,35 +19,45 @@ def read(path):
         return list(csv.DictReader(handle))
 
 
-def plot_task(task):
+def plot_task(task, normalized=False):
     plt.rcParams.update({"font.size": 16, "axes.titlesize": 18, "axes.labelsize": 17,
                          "xtick.labelsize": 14, "ytick.labelsize": 14,
                          "legend.fontsize": 13})
     base = read(SOURCE / "base" / task / "comparison.csv")
     heads = read(SOURCE / "heads" / task / "comparison.csv")
     metric = "macro_f1" if task == "rte" else "pearson"
+    def values(series, field):
+        result = [float(row[field]) for row in series]
+        if not normalized:
+            return result
+        low, high = min(result), max(result)
+        return [(value - low) / (high - low) if high > low else 0.0 for value in result]
+
+    quality_label = f"{metric.upper()} normalizado" if normalized else metric.upper()
+    loss_label = "Perda normalizada" if normalized else "Perda"
     fig, axes = plt.subplots(2, 2, figsize=(13, 8), constrained_layout=True)
-    axes[0, 0].plot([int(r["epoch"]) for r in base], [float(r["validation_primary"]) for r in base], "o-")
-    axes[0, 0].set(title="Modelo base · qualidade", xlabel="Épocas", ylabel=metric.upper())
-    axes[0, 1].plot([int(r["epoch"]) for r in base], [float(r["train_loss"]) for r in base], "o-", label="Treino")
-    axes[0, 1].plot([int(r["epoch"]) for r in base], [float(r["validation_loss"]) for r in base], "o-", label="Validação")
-    axes[0, 1].set(title="Modelo base · perda", xlabel="Épocas", ylabel="Perda")
+    axes[0, 0].plot([int(r["epoch"]) for r in base], values(base, "validation_primary"), "o-")
+    axes[0, 0].set(title="Modelo base · qualidade", xlabel="Épocas", ylabel=quality_label)
+    axes[0, 1].plot([int(r["epoch"]) for r in base], values(base, "train_loss"), "o-", label="Treino")
+    axes[0, 1].plot([int(r["epoch"]) for r in base], values(base, "validation_loss"), "o-", label="Validação")
+    axes[0, 1].set(title="Modelo base · perda", xlabel="Épocas", ylabel=loss_label)
     for layer in (3, 6, 9):
         series = [r for r in heads if int(r["layer"]) == layer]
         axes[1, 0].plot([int(r["epoch"]) for r in series],
-                        [float(r["validation_" + metric]) for r in series], "o-", label=f"Camada {layer}")
+                        values(series, "validation_" + metric), "o-", label=f"Camada {layer}")
         axes[1, 1].plot([int(r["epoch"]) for r in series],
-                        [float(r["validation_loss"]) for r in series], "o-", label=f"Camada {layer}")
-    axes[1, 0].set(title="Heads · qualidade na validação", xlabel="Épocas", ylabel=metric.upper())
-    axes[1, 1].set(title="Heads · perda na validação", xlabel="Épocas", ylabel="Perda")
+                        values(series, "validation_loss"), "o-", label=f"Camada {layer}")
+    axes[1, 0].set(title="Heads · qualidade na validação", xlabel="Épocas", ylabel=quality_label)
+    axes[1, 1].set(title="Heads · perda na validação", xlabel="Épocas", ylabel=loss_label)
     for ax in axes.flat:
         ax.grid(alpha=.2)
         ax.set_xticks(range(2, 31, 4))
         if len(ax.lines) > 1:
             ax.legend(fontsize=11)
-    fig.suptitle(f"Treino até 30 épocas · {task.upper()}", fontsize=23)
-    fig.savefig(DEST / f"grafico_30_epocas_{task}.png", dpi=220)
-    fig.savefig(DEST / f"grafico_30_epocas_{task}.svg")
+    fig.suptitle(f"Treino até 30 épocas · {task.upper()}{' · normalizado' if normalized else ''}", fontsize=23)
+    suffix = "_normalizado" if normalized else ""
+    fig.savefig(DEST / f"grafico_30_epocas_{task}{suffix}.png", dpi=220)
+    fig.savefig(DEST / f"grafico_30_epocas_{task}{suffix}.svg")
     plt.close(fig)
     best_base = max(base, key=lambda r: (float(r["validation_primary"]), -int(r["epoch"])))
     best_heads = {str(layer): max((r for r in heads if int(r["layer"]) == layer),

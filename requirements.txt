@@ -1,4 +1,4 @@
-torch>=2.2,<3
+torch>=2.6,<3
 transformers>=4.44,<5
 datasets>=2.19,<5
 accelerate>=0.33,<2

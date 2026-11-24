@@ -1,0 +1,9 @@
+﻿Tarefa,Componente,Camada,Época,Métrica,Validação,Perda,Encoder dos heads
+RTE,Modelo base,12,28,Macro F1,0.9660,0.2936,—
+RTE,Head,3,28,Macro F1,0.6999,0.5681,7
+RTE,Head,6,14,Macro F1,0.8740,0.3130,7
+RTE,Head,9,12,Macro F1,0.9420,0.1839,7
+STS,Modelo base,12,24,Pearson,0.9721,0.0618,—
+STS,Head,3,30,Pearson,0.4466,0.7867,7
+STS,Head,6,30,Pearson,0.8297,0.3365,7
+STS,Head,9,24,Pearson,0.9406,0.1195,7

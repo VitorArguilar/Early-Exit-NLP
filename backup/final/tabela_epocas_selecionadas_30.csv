@@ -1,0 +1,9 @@
+﻿tarefa,componente,camada,epoca_selecionada,metrica,qualidade_validacao,perda_validacao,checkpoint_base_epocas,arquivo_origem
+rte,modelo_base,12,28,macro_f1,0.9659987759559344,0.2935869097709656,28,outputs/long_overfit/base/rte/comparison.csv
+rte,head,3,28,macro_f1,0.6999231803341655,0.5680588488578796,7,outputs/long_overfit/heads/rte/comparison.csv
+rte,head,6,14,macro_f1,0.873995463836698,0.3129872334599495,7,outputs/long_overfit/heads/rte/comparison.csv
+rte,head,9,12,macro_f1,0.9419607654774627,0.18394820011779667,7,outputs/long_overfit/heads/rte/comparison.csv
+sts,modelo_base,12,24,pearson,0.972129762172699,0.06178072839975357,24,outputs/long_overfit/base/sts/comparison.csv
+sts,head,3,30,pearson,0.44661402702331543,0.7866505886912346,7,outputs/long_overfit/heads/sts/comparison.csv
+sts,head,6,30,pearson,0.8297172784805298,0.3365097702741623,7,outputs/long_overfit/heads/sts/comparison.csv
+sts,head,9,24,pearson,0.9405811429023743,0.11951489901542664,7,outputs/long_overfit/heads/sts/comparison.csv

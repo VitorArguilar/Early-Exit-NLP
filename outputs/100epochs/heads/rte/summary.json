@@ -1,0 +1,77 @@
+{
+  "task": "rte",
+  "last_epoch": 23,
+  "best_epoch": 18,
+  "best_mean_validation": 0.8419142029388341,
+  "epochs_without_improvement": 5,
+  "patience": 5,
+  "best_by_layer": {
+    "1": {
+      "epoch": 16,
+      "score": 0.7257531778600741
+    },
+    "2": {
+      "epoch": 22,
+      "score": 0.7313184934295158
+    },
+    "3": {
+      "epoch": 18,
+      "score": 0.7056597426625179
+    },
+    "4": {
+      "epoch": 10,
+      "score": 0.7778000200180162
+    },
+    "5": {
+      "epoch": 16,
+      "score": 0.812
+    },
+    "6": {
+      "epoch": 20,
+      "score": 0.857999431997728
+    },
+    "7": {
+      "epoch": 21,
+      "score": 0.9078215425062922
+    },
+    "8": {
+      "epoch": 15,
+      "score": 0.9079056954321225
+    },
+    "9": {
+      "epoch": 12,
+      "score": 0.9479791916766707
+    },
+    "10": {
+      "epoch": 21,
+      "score": 0.9479966717869943
+    },
+    "11": {
+      "epoch": 21,
+      "score": 0.9519807923169268
+    },
+    "12": {
+      "epoch": 11,
+      "score": 0.959983993597439
+    }
+  },
+  "test_evaluated": false,
+  "epochs_completed": 23,
+  "selection_metric": "mean_macro_f1",
+  "layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base_checkpoint": "/home/vitorarguilar/vitor/ufrgs/nlp/tf/Early-Exit-NLP/outputs/100epochs/base/rte/best_model",
+  "early_stopping_rule": "5 \u00e9pocas consecutivas sem melhora da m\u00e9dia nas 12 camadas"
+}

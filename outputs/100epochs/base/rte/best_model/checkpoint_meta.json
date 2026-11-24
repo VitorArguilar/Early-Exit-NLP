@@ -1,0 +1,7 @@
+{
+  "epoch": 6,
+  "selection_metric": "macro_f1",
+  "validation_score": 0.9579984879455661,
+  "training_dtype": "float32",
+  "saved_weights_dtype": "float16"
+}

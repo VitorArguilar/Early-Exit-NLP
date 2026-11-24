@@ -1,0 +1,10 @@
+﻿Tarefa,Estratégia,Métrica,Qualidade média,DP qualidade,Acurácia/MSE,Latência ms/par,Speedup,Camadas médias,Seeds
+RTE,Fixa 3,Macro F1,0.5974,0.0327,0.6088,0.419,3.76×,3.00,3
+RTE,Fixa 6,Macro F1,0.7896,0.0042,0.7911,0.805,1.95×,6.00,3
+RTE,Fixa 9,Macro F1,0.8688,0.0115,0.8697,1.189,1.32×,9.00,3
+RTE,Fixa 12,Macro F1,0.8885,0.0000,0.8889,1.572,1.00×,12.00,3
+RTE,Confiança,Macro F1,0.8723,0.0025,0.8730,1.253,1.26×,8.00,3
+STS,Fixa 3,Pearson,0.3862,0.0064,1.1389,0.408,3.74×,3.00,3
+STS,Fixa 6,Pearson,0.7541,0.0006,0.4972,0.781,1.95×,6.00,3
+STS,Fixa 9,Pearson,0.8248,0.0024,0.4897,1.156,1.32×,9.00,3
+STS,Fixa 12,Pearson,0.8312,0.0000,0.5136,1.525,1.00×,12.00,3

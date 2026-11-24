@@ -1,0 +1,11 @@
+﻿Tarefa,Paciência,Tolerância,Métrica,Qualidade média,DP,Latência ms/par,Teste
+RTE,2,—,Macro F1,0.8916,0.0194,1.126,não avaliado
+RTE,3,—,Macro F1,0.9513,0.0031,1.465,não avaliado
+STS,2,0.1,Pearson,0.9350,0.0006,1.472,não avaliado
+STS,2,0.2,Pearson,0.9177,0.0010,1.369,não avaliado
+STS,2,0.3,Pearson,0.9068,0.0044,1.308,não avaliado
+STS,2,0.5,Pearson,0.8845,0.0035,1.201,não avaliado
+STS,3,0.1,Pearson,0.9525,0.0013,1.582,não avaliado
+STS,3,0.2,Pearson,0.9513,0.0013,1.564,não avaliado
+STS,3,0.3,Pearson,0.9495,0.0022,1.547,não avaliado
+STS,3,0.5,Pearson,0.9469,0.0032,1.521,não avaliado

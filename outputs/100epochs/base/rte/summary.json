@@ -1,0 +1,14 @@
+{
+  "task": "rte",
+  "seed": 42,
+  "max_epochs": 100,
+  "patience": 5,
+  "epochs_completed": 11,
+  "best_epoch": 6,
+  "best_validation": 0.9579984879455661,
+  "selection_metric": "macro_f1",
+  "checkpoint": "best_model",
+  "test_evaluated": false,
+  "training_dtype": "float32",
+  "saved_weights_dtype": "float16"
+}

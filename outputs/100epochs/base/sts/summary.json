@@ -1,0 +1,14 @@
+{
+  "task": "sts",
+  "seed": 42,
+  "max_epochs": 100,
+  "patience": 5,
+  "epochs_completed": 31,
+  "best_epoch": 26,
+  "best_validation": 0.9721437096595764,
+  "selection_metric": "pearson",
+  "checkpoint": "best_model",
+  "test_evaluated": false,
+  "training_dtype": "float32",
+  "saved_weights_dtype": "float16"
+}

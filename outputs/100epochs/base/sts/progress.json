@@ -1,0 +1,8 @@
+{
+  "last_epoch": 31,
+  "best_epoch": 26,
+  "best_validation": 0.9721437096595764,
+  "epochs_without_improvement": 5,
+  "patience": 5,
+  "stopped_early": true
+}
