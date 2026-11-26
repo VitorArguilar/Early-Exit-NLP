@@ -1,0 +1,11 @@
+﻿task,configuration,pair_id,premise,hypothesis,exit_group,exit_layer,gold,prediction,absolute_error,correct,test_quality,test_speedup,result
+RTE,"Confiança · limiar 0,5",2172,Um cara está pensando,O cara está pensando,Cedo,1,1,1,0,True,0.8533467120939335,1.6284237329599245,Acerto
+RTE,"Confiança · limiar 0,5",1304,Um homem está jantando,Um homem está comendo,Meio,7,1,0,1,False,0.8533467120939335,1.6284237329599245,Erro
+RTE,Consecutivas · paciência 2,1177,O homem está comendo maçã,A pessoa está comendo maçã,Meio,5,1,1,0,True,0.6885702385212538,3.6785678374865203,Acerto
+RTE,Consecutivas · paciência 2,1292,O cara está jejuando,O cara não está comendo,Cedo,2,1,0,1,False,0.6885702385212538,3.6785678374865203,Erro
+RTE,Consecutivas · paciência 3,925,Um homem está cantando na praça,Um homem está cantando,Tarde,11,1,1,0,True,0.735785025599351,2.1477255601275504,Acerto
+RTE,Consecutivas · paciência 3,762,Um homem está cuspindo,Um homem está falando,Cedo,3,0,1,1,False,0.735785025599351,2.1477255601275504,Erro
+STS,"Consecutivas · paciência 2 · tolerância 0,2",1400,Um cara está almoçando,Um cara está comendo,Cedo,4,4.25,4.6025285720825195,0.35252857208251953,True,0.5493252277374268,2.3043987548154146,Acerto
+STS,"Consecutivas · paciência 2 · tolerância 0,2",2145,Algum peixe está nadando,Um animal está na água,Meio,6,4.0,3.306865930557251,0.693134069442749,False,0.5493252277374268,2.3043987548154146,Erro
+STS,"Consecutivas · paciência 3 · tolerância 0,2",2172,Um cara está pensando,O cara está pensando,Meio,8,5.0,4.851667881011963,0.1483321189880371,True,0.731109619140625,1.3097918866804934,Acerto
+STS,"Consecutivas · paciência 3 · tolerância 0,2",1292,O cara está jejuando,O cara não está comendo,Tarde,10,4.0,3.2259321212768555,0.7740678787231445,False,0.731109619140625,1.3097918866804934,Erro
